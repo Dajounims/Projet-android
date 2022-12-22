@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeconnecterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Se connecter"
+        android:textSize="30dp"
+android:textAlignment="textStart"
+       android:textStyle="bold"
+        android:id="@+id/t1"
+        android:layout_marginTop="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:text="Pseudo"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/pseudo"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/t2"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cadree"
+        android:hint="Entrez votre pseudo"
+
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mot de passe"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:textSize="25dp"
+        android:layout_below="@+id/pseudo"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/motdepasse"
+        android:layout_marginLeft="30dp"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:hint="Entrez votre mot de passe"
+        android:layout_marginRight="30dp"
+        android:textSize="18dp"
+        android:background="@drawable/cadree"
+        android:layout_below="@+id/t3"
+        android:layout_marginTop="10dp"
+
+        />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/motdepasse"
+        android:background="@drawable/cadree"
+        android:textSize="18dp"
+        android:text="Se Connecter"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="60dp"
+        />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mot de passe oublié?"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/purple_500"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="textEnd"
+        android:textSize="18dp"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/t5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="---------------------OU----------------------"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_below="@+id/t4"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/t6"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:textAlignment="center"
+        android:layout_marginRight="30dp"
+
+        android:background="@drawable/cadree"
+        android:text="Continuer avec google"
+        android:layout_marginLeft="30dp"
+        android:textSize="25dp"
+        android:layout_below="@+id/t5"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"/>
+    <TextView
+        android:id="@+id/t7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+
+        android:text="Vous n'avez pas de compte? Créer un compte..."
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp"
+        android:layout_below="@+id/t6"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
